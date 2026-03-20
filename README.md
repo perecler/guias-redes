@@ -45,7 +45,21 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 ### 6. Adaptador Genérico (Generic Driver)
 * **Cómo funciona:** Permite usar drivers especiales (UDP Tunnel, VDE) para conectar MVs entre diferentes hosts físicos.
 * **Uso típico:** Configuraciones experimentales o redes distribuidas avanzadas.
+---
 
+## 📊 Tabla Comparativa (Resumen Visual)
+
+| Modo | Internet | Comunicación MVs | Comunicación Host | Aislamiento |
+| :--- | :---: | :---: | :---: | :--- |
+| **NAT** | ✅ Sí | ❌ No* | ❌ No* | Medio |
+| **Puente** | ✅ Sí | ✅ Sí | ✅ Sí | Nulo (Expuesta) |
+| **Solo-Anfitrión** | ❌ No | ✅ Sí | ✅ Sí | Alto |
+| **Red NAT** | ✅ Sí | ✅ Sí | ❌ No* | Medio |
+| **Interna** | ❌ No | ✅ Sí | ❌ No | Total |
+
+*\* Excepto mediante reglas de "Port Forwarding".*
+
+![Infografia Virtualbox](./img/vm.png)
 ---
 
 ## Conectividad interna entre máquinas y externa (internet)
