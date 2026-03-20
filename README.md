@@ -8,7 +8,6 @@ Este repositorio contiene guías y recursos para configurar correctamente las re
 A continuación se detallan los modos de red disponibles y sus casos de uso específicos:
 
 ### 1. NAT (Network Address Translation)
-* ☁️ **Icono:** Un router con una nube pequeña.
 * **Cómo funciona:** La MV comparte la IP del host. VirtualBox actúa como un router interno. El host no puede acceder a la MV a menos que se configure "Port Forwarding".
 * **Acceso a Internet:** ✅ Sí.
 * **Comunicación entre MV:** ❌ No (aisladas entre sí).
@@ -16,7 +15,6 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Navegación web básica y descargas seguras donde la MV no necesita ser "vista" desde fuera.
 
 ### 2. Adaptador Puente (Bridged Adapter)
-* 🔌 **Icono:** Un cable conectado directamente a un switch o router físico.
 * **Cómo funciona:** La MV actúa como un equipo independiente en la red física. Obtiene su propia IP del router real (casa/oficina).
 * **Acceso a Internet:** ✅ Sí.
 * **Comunicación entre MV:** ✅ Sí (con todos los equipos de la red física).
@@ -24,7 +22,6 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Servidores web/archivos y pruebas de red reales accesibles por otros dispositivos locales.
 
 ### 3. Solo-Anfitrión (Host-Only)
-* 🔒 **Icono:** Un Host conectado a una red cerrada de MVs.
 * **Cómo funciona:** Crea una red privada totalmente aislada del exterior. Solo interactúan el Host y las MVs conectadas a este adaptador.
 * **Acceso a Internet:** ❌ No.
 * **Comunicación entre MV:** ✅ Sí.
@@ -32,7 +29,6 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Entornos de pruebas aislados, bases de datos privadas y clusters de desarrollo.
 
 ### 4. Red NAT (NAT Network)
-* 🌐 **Icono:** Un router intermedio con varias MVs, conectado a una nube.
 * **Cómo funciona:** Similar al NAT simple, pero permite que varias MVs se comuniquen entre sí dentro de la misma subred privada mientras salen a internet.
 * **Acceso a Internet:** ✅ Sí.
 * **Comunicación entre MV:** ✅ Sí (si comparten la misma "NAT Network").
@@ -40,7 +36,6 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Grupos de servidores que necesitan internet y hablarse entre ellos (ej: Web + DB).
 
 ### 5. Red Interna (Internal Network)
-* 🏗️ **Icono:** Varias MVs conectadas a un switch vacío, sin salida.
 * **Cómo funciona:** Aislamiento total. Ni el Host ni Internet tienen acceso. Solo las MVs con el mismo nombre de red interna se ven.
 * **Acceso a Internet:** ❌ No.
 * **Comunicación entre MV:** ✅ Sí.
@@ -48,7 +43,6 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Malware analysis, laboratorios de hacking ético y redes altamente sensibles.
 
 ### 6. Adaptador Genérico (Generic Driver)
-* ⚙️ **Icono:** Un engranaje o cable con interrogante.
 * **Cómo funciona:** Permite usar drivers especiales (UDP Tunnel, VDE) para conectar MVs entre diferentes hosts físicos.
 * **Uso típico:** Configuraciones experimentales o redes distribuidas avanzadas.
 
