@@ -62,7 +62,7 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 *\* Excepto mediante reglas de "Port Forwarding".*
 
 
-![Infografia Virtualbox](.img/ntw_adapter_virtualbox.png) 
+![Infografia Virtualbox](./img/ntw_adapter_virtualbox.png) 
 
 ---
 
