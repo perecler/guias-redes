@@ -3,6 +3,7 @@
 Este repositorio contiene guías y recursos para configurar correctamente las redes en Oracle VM VirtualBox. El objetivo principal es lograr el escenario ideal para desarrollo y pruebas: que la máquina virtual (VM) tenga acceso a Internet y, simultáneamente, sea accesible desde la máquina física (Host). En el inicio de mi aprendizaje fue uno los puntos donde invertí más tiempo, incluso ahora cuando monto algun laboratorio de prueba tengo que repasar algunos conceptos. Espero que esta guía sirva de referencia a alguien más.
 ---
 
+
 ## 🛠️ Modos de Red en VirtualBox
 
 A continuación se detallan los modos de red disponibles y sus casos de uso específicos:
@@ -47,7 +48,8 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 * **Uso típico:** Configuraciones experimentales o redes distribuidas avanzadas.
 ---
 
-## 📊 Tabla Comparativa (Resumen Visual)
+
+## 📊 Tabla Comparativa
 
 | Modo | Internet | Comunicación MVs | Comunicación Host | Aislamiento |
 | :--- | :---: | :---: | :---: | :--- |
@@ -59,8 +61,11 @@ A continuación se detallan los modos de red disponibles y sus casos de uso espe
 
 *\* Excepto mediante reglas de "Port Forwarding".*
 
-![Infografia Virtualbox](./img/vm_virtualbox.png) 
+
+![Infografia Virtualbox](.img/ntw_adapter_virtualbox.png) 
+
 ---
+
 
 ## Conectividad interna entre máquinas y externa (internet)
 
